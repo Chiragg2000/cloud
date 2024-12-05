@@ -4,7 +4,6 @@ from nltk.sentiment import SentimentIntensityAnalyzer
 app = Flask(__name__)
 # Download necessary NLTK resources
 nltk.download('vader_lexicon')
-
 # Initialize SentimentIntensityAnalyzer
 sia = SentimentIntensityAnalyzer()
 
