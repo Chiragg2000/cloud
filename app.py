@@ -2,7 +2,6 @@ from flask import Flask, render_template, request
 import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
 app = Flask(__name__)
-
 # Download necessary NLTK resources
 nltk.download('vader_lexicon')
 
@@ -44,4 +43,3 @@ def analyze():
 # Run the application
 if __name__ == '__main__':
     app.run(debug=True)
-
